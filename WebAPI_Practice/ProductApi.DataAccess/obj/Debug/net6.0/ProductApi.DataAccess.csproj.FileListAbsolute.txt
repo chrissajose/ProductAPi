@@ -1,0 +1,14 @@
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\bin\Debug\net6.0\ProductApi.DataAccess.deps.json
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\bin\Debug\net6.0\ProductApi.DataAccess.runtimeconfig.json
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\bin\Debug\net6.0\ProductApi.DataAccess.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\bin\Debug\net6.0\ref\ProductApi.DataAccess.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\bin\Debug\net6.0\ProductApi.DataAccess.pdb
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.csproj.AssemblyReference.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.AssemblyInfoInputs.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.AssemblyInfo.cs
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.csproj.CoreCompileInputs.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ref\ProductApi.DataAccess.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.pdb
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi.DataAccess\obj\Debug\net6.0\ProductApi.DataAccess.genruntimeconfig.cache

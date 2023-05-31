@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Chrissa\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj": {}
+    "D:\\Chrissa\\WebAPI_Practice\\Testin\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "D:\\Chrissa\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "D:\\Chrissa\\WebAPI_Practice\\Testin\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Chrissa\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "D:\\Chrissa\\WebAPI_Practice\\Testin\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj",
         "projectName": "ClassLibrary1",
-        "projectPath": "D:\\Chrissa\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectPath": "D:\\Chrissa\\WebAPI_Practice\\Testin\\WebAPI_Practice\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\pct147\\.nuget\\packages\\",
-        "outputPath": "D:\\Chrissa\\WebAPI_Practice\\ClassLibrary1\\obj\\",
+        "outputPath": "D:\\Chrissa\\WebAPI_Practice\\Testin\\WebAPI_Practice\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

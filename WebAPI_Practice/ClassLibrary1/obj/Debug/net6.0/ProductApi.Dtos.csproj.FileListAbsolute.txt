@@ -1,0 +1,14 @@
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\bin\Debug\net6.0\ProductApi.Dtos.deps.json
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\bin\Debug\net6.0\ProductApi.Dtos.runtimeconfig.json
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\bin\Debug\net6.0\ProductApi.Dtos.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\bin\Debug\net6.0\ref\ProductApi.Dtos.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\bin\Debug\net6.0\ProductApi.Dtos.pdb
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.csproj.AssemblyReference.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.AssemblyInfoInputs.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.AssemblyInfo.cs
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.csproj.CoreCompileInputs.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ref\ProductApi.Dtos.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.pdb
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ClassLibrary1\obj\Debug\net6.0\ProductApi.Dtos.genruntimeconfig.cache
