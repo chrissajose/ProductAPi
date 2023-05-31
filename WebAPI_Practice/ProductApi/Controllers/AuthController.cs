@@ -21,7 +21,7 @@ namespace ProductAPi.Controllers
         }
 
 
-        [HttpPost("register")]
+        [HttpPost("Register")]
         public ActionResult<Customer> RegisterCustomer(CustomerDtos request)
         {
             CreatePasswordHash(request.Password, out string passwordHash, out string passwordSalt);
@@ -40,7 +40,7 @@ namespace ProductAPi.Controllers
             return Ok(customer);
         }
 
-        [HttpPost("login")]
+        [HttpPost("Login")]
         public ActionResult<string> Login(LoginDtos request) //username:tonystark pswd:12345
         {
             Customer? checkvalid = _context.Customers.FirstOrDefault(customer => customer.UserName == request.UserName);
@@ -62,7 +62,7 @@ namespace ProductAPi.Controllers
                 return Ok(token);
             }
         }
-        private void CreatePasswordHash(string password, out string passwordHash, out string passwordSalt)
+        private static void CreatePasswordHash(string password, out string passwordHash, out string passwordSalt)
         {
             using(var hmac = new HMACSHA512())
             {
@@ -72,7 +72,7 @@ namespace ProductAPi.Controllers
             }
         }
 
-        private bool VerifyPasswordHash(string password, string passwordHash, string passwordSalt)
+        private static bool VerifyPasswordHash(string password, string passwordHash, string passwordSalt)
         {
             using (var hmac = new HMACSHA512(Convert.FromBase64String(passwordSalt)))
             {

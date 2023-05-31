@@ -24,7 +24,8 @@ namespace ProductAPi.Controllers
         }
 
         // GET: api/Productsff3
-        [HttpGet]        
+        
+        [HttpGet,Authorize]        
         public async Task<ActionResult<IEnumerable<Product>>> GetProduct()
         {
           if (_context.Product == null)
@@ -35,7 +36,7 @@ namespace ProductAPi.Controllers
         }
 
         // GET: api/Products/5
-        [HttpGet("{productid}")]
+        [HttpGet("{productid}"),Authorize]
         public async Task<ActionResult<Product>> GetProduct(int productid)
         {
           if (_context.Product == null)
@@ -55,7 +56,7 @@ namespace ProductAPi.Controllers
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         
-        [HttpPut("{productid}"),Authorize]
+        [HttpPut("{productid}"),Authorize(Roles = "Admin")]
         //[Route("UpdateExistingProduct")]
         public async Task<IActionResult> PutProduct(int productid, Product product)
         {
@@ -88,7 +89,7 @@ namespace ProductAPi.Controllers
         // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
        
-        [HttpPost,Authorize]
+        [HttpPost,Authorize(Roles = "Admin")]
         //[Route("CreateNewProduct")]
         public async Task<ActionResult<Product>> PostProduct(Product product)
         {

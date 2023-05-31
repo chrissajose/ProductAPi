@@ -9,10 +9,11 @@ namespace ProductAPi.Dtos
 {
     public class LoginDtos
     {
-        [Required]
+        [Required(ErrorMessage = "Username is a required field")]
+
         public string UserName { get; set; } = null!;
 
-        [Required]
+        [Required(ErrorMessage = "Password is a required field")]
         public string Password { get; set; } = null!;
     }
 }
