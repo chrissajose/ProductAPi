@@ -23,7 +23,7 @@ namespace ProductAPi.Controllers
             _context = context;
         }
 
-        // GET: api/Productsfjjjfgjjf3
+        // GET: api/Productsff3
         [HttpGet]        
         public async Task<ActionResult<IEnumerable<Product>>> GetProduct()
         {
