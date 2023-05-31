@@ -32,5 +32,8 @@ namespace ProductAPi.Models
         public string Gender { get; set; } = null!;
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        [Column(TypeName = "nvarchar(20)")]
+        public string Role { get; set; } = "User";
     }
 }

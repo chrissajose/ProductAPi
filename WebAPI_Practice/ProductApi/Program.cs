@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using ProductAPi.DataAccess;
+using Swashbuckle.AspNetCore.Filters;
 using System.Net;
 using System.Text;
 
@@ -15,12 +17,26 @@ builder.Services.AddDbContext<ProductAPiContext>(options =>
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen( options =>
+{
+    options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+    {
+        Description = "Standard Authorization header using the bearer scheme  (\"bearer {token}\")",
+        In =  ParameterLocation.Header,
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey
+    }) ;
+    options.OperationFilter<SecurityRequirementsOperationFilter>();
+});
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
 });
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters
@@ -31,12 +47,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateIssuerSigningKey = true,
         ValidIssuer = builder.Configuration["JwtSetting:Issuer"],
         ValidAudience = builder.Configuration["JwtSetting:Issuer"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSetting:Key"]))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JwtSetting:Key").Value))
     };
 });
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,25 +59,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseSession();
-app.Use(async (context, next) =>
-{
-    var token = context.Session.GetString("Token");
-    if (!string.IsNullOrWhiteSpace(token))
-    {
-        context.Request.Headers.Add("Authorization", "Bearer" + token);
-    }
-    await next();
-});
 
-app.UseStatusCodePages(async context =>
-{
-   var request = context.HttpContext.Request;
-   var response = context.HttpContext.Response;
-   if (response.StatusCode == (int)HttpStatusCode.Unauthorized)
-   {
-
-   }
-});
 app.UseHttpsRedirection();
 
 app.UseAuthentication();

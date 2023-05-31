@@ -19,8 +19,7 @@ namespace ProductAPi.Authenticate
             var claims = new[]
             {
                 new Claim(ClaimTypes.Name, customer.UserName),
-
-                //new Claim(ClaimTypes.Role, employee.Role),
+                new Claim(ClaimTypes.Role, customer.Role),
 
             };
 

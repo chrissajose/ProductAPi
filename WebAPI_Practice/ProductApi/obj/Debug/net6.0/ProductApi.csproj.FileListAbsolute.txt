@@ -269,3 +269,7 @@ D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\obj\Debug\net6.0\Pr
 D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\obj\Debug\net6.0\ref\ProductApi.dll
 D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\obj\Debug\net6.0\ProductApi.pdb
 D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\obj\Debug\net6.0\ProductApi.genruntimeconfig.cache
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\bin\Debug\net6.0\Scrutor.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\Chrissa\WebAPI_Practice\Testin\WebAPI_Practice\ProductApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

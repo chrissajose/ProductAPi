@@ -22,7 +22,7 @@ namespace ProductAPi.Controllers
 
 
         [HttpPost("register")]
-        public async Task<ActionResult<Customer>> RegisterCustomer(CustomerDtos request)
+        public ActionResult<Customer> RegisterCustomer(CustomerDtos request)
         {
             CreatePasswordHash(request.Password, out string passwordHash, out string passwordSalt);
             Customer customer = new Customer()
@@ -41,7 +41,7 @@ namespace ProductAPi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<string>> Login(LoginDtos request) //username:tonystark pswd:12345
+        public ActionResult<string> Login(LoginDtos request) //username:tonystark pswd:12345
         {
             Customer? checkvalid = _context.Customers.FirstOrDefault(customer => customer.UserName == request.UserName);
             if(checkvalid == null)
@@ -59,7 +59,7 @@ namespace ProductAPi.Controllers
                 var token = JwtTokenHelper.GenerateToken(JwtSettings, checkvalid);
 
                 HttpContext.Session.SetString("Token", token);
-                return Ok("User login successful");
+                return Ok(token);
             }
         }
         private void CreatePasswordHash(string password, out string passwordHash, out string passwordSalt)

@@ -54,8 +54,8 @@ namespace ProductAPi.Controllers
 
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [Authorize]
-        [HttpPut("{productid}")]
+        
+        [HttpPut("{productid}"),Authorize]
         //[Route("UpdateExistingProduct")]
         public async Task<IActionResult> PutProduct(int productid, Product product)
         {
@@ -87,8 +87,8 @@ namespace ProductAPi.Controllers
 
         // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [Authorize]
-        [HttpPost]
+       
+        [HttpPost,Authorize]
         //[Route("CreateNewProduct")]
         public async Task<ActionResult<Product>> PostProduct(Product product)
         {
@@ -101,9 +101,9 @@ namespace ProductAPi.Controllers
 
             return CreatedAtAction("GetProduct", new { id = product.Id }, product);
         }
-        [Authorize]
+      
         // DELETE: api/Products/5
-        [HttpDelete("{productid}")]
+        [HttpDelete("{productid}"), Authorize(Roles = "Admin")]
         //[Route("DeleteAProduct")]
         public async Task<IActionResult> DeleteProduct(int productid)
         {
